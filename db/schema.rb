@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20150307040742) do
 
-  create_table "invoices", force: true do |t|
+  create_table "invoices", force: :cascade do |t|
     t.datetime "date"
     t.string   "company"
     t.decimal  "tax"

@@ -1,28 +1,23 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Prerequisites:
 
-Things you may want to cover:
+* ruby 2.4.1 - rails 4.2.8
 
-* Ruby version
+* homebrew - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+* rbenv - brew install rbenv
+* ruby - rbenv install 2.4.1
+* rbenv local 2.4.1
+* bundle - gem install bundler
 
-* System dependencies
+local setup:
 
-* Configuration
+* bundle
+* rake db:migrate RAILS_ENV=development
+* bundle exec rails s
 
-* Database creation
+* http://localhost:3000
 
-* Database initialization
+Purpose:
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+This app is a sample learning app to create an inventory management system of the beer if my refrigerator
